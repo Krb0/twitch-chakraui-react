@@ -7,13 +7,20 @@ const NavbarInput = () => {
     <Flex
       alignItems="center"
       gap="0.05rem"
-      flexGrow="1"
+      flexBasis="100%"
       justifyContent="center"
     >
       <Input
+        display={{
+          base: "none",
+          md: "flex",
+        }}
         type="search"
         color="white"
-        width="355px"
+        width={{
+          base: "100%",
+          lg: "355px",
+        }}
         height="35px"
         placeholder="Buscar"
         _placeholder={{
@@ -32,6 +39,10 @@ const NavbarInput = () => {
         onChange={(e) => setInputText(e.target.value)}
       />
       <Flex
+        display={{
+          base: "none",
+          md: "flex",
+        }}
         bgColor="#3A3A3D"
         height="35px"
         alignItems="center"

@@ -1,5 +1,5 @@
 import Layout from "./Layouts";
-import { Box, chakra, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 function App() {
   return (
     <Layout>

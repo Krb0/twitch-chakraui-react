@@ -1,6 +1,6 @@
 import { Avatar, Flex, chakra, Box } from "@chakra-ui/react";
 
-const Streamer = ({
+const StreamerCard = ({
   name,
   avatar,
   viewers,
@@ -45,4 +45,4 @@ const Streamer = ({
   );
 };
 
-export default Streamer;
+export default StreamerCard;

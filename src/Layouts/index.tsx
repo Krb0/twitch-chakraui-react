@@ -1,7 +1,10 @@
 import { chakra, Box, Flex } from "@chakra-ui/react";
+import { useState } from "react";
 import NavBar from "./NavBar";
 import Sidebar from "./Sidebar";
+
 const Layouts = ({ children }: { children: React.ReactChild }) => {
+  const [isSidebar, setIsSidebar] = useState<boolean>(true);
   return (
     <chakra.div
       className="App"
@@ -11,7 +14,7 @@ const Layouts = ({ children }: { children: React.ReactChild }) => {
     >
       <NavBar />
       <Flex height="full" width="full">
-        <Sidebar />
+        <Sidebar isSidebar={isSidebar} setIsSidebar={setIsSidebar} />
         <Box width="full" bgColor="dark.700">
           {children}
         </Box>

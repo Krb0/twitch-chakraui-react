@@ -1,4 +1,4 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import loginIcon from "../../../assets/images/login-icon.svg";
 import crownIcon from "../../../assets/images/crown-icon.svg";
 import Button from "./Button";
@@ -6,7 +6,12 @@ import Icon from "../../../components/Icon";
 
 const RightSide = () => {
   return (
-    <Flex alignItems="center" gap="4" flexGrow="1" justifyContent="flex-end">
+    <Flex
+      alignItems="center"
+      gap="4"
+      flexBasis="100%"
+      justifyContent="flex-end"
+    >
       <Icon icon={crownIcon} label="Botín" />
       <Button color="dark.200" hoverColor="dark.100">
         Iniciar sesion

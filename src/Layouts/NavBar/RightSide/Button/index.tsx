@@ -11,8 +11,12 @@ const ButtonTemplate = ({
 }) => {
   return (
     <Button
-      bgColor={color}
       color="white"
+      bgColor={color}
+      display={{
+        base: "none",
+        md: "inline",
+      }}
       borderRadius="5px"
       fontSize="13.4px"
       fontWeight="500"
