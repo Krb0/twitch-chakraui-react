@@ -8,7 +8,7 @@ interface Props {
   setIsSidebar: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const Sidebar = ({ setIsSidebar, isSidebar }: Props) => {
-  const [streamers] = useState<Streamer[]>(data);
+  const [streamers] = useState<Streamer[]>([...data]);
   return (
     <>
       {isSidebar ? (

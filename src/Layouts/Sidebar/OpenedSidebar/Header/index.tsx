@@ -18,7 +18,7 @@ const SidebarHeader = ({ setIsSidebar }: IProps) => {
         CANALES RECOMENDADOS
       </chakra.span>
       <Box onClick={() => setIsSidebar(false)}>
-        <Icon icon={closeSidebarIcon} label="Colapsar" />
+        <Icon icon={closeSidebarIcon} label="Colapsar" placement="right" />
       </Box>
     </Flex>
   );

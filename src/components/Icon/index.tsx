@@ -1,8 +1,22 @@
-import { Tooltip, Box, Image } from "@chakra-ui/react";
+import { Tooltip, Box, Image, PlacementWithLogical } from "@chakra-ui/react";
 
-const IconContainer = ({ icon, label }: { icon: string; label: string }) => {
+const IconContainer = ({
+  icon,
+  label,
+  placement,
+}: {
+  icon: string;
+  label: string;
+  placement?: PlacementWithLogical | undefined;
+}) => {
   return (
-    <Tooltip label={label} bgColor="white" color="dark">
+    <Tooltip
+      hasArrow
+      label={label}
+      bgColor="white"
+      color="dark"
+      placement={placement ? placement : "bottom"}
+    >
       <Box
         cursor="pointer"
         padding="0.3rem"
