@@ -1,5 +1,4 @@
 import { Box, Flex, Grid, GridItem, Image } from "@chakra-ui/react";
-import React from "react";
 import Carousel from "../components/Home/Carousel";
 
 const HomePage = () => {

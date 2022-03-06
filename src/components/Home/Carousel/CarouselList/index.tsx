@@ -4,7 +4,7 @@ import data from "./data.json";
 import CarouselItem from "./CarouselItem";
 
 const CarouselList = () => {
-  const [carouselItems, setCarouselItems] = useState(data);
+  const [carouselItems] = useState(data);
   return (
     <Flex
       position="relative"

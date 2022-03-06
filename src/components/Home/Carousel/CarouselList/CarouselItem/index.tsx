@@ -1,4 +1,4 @@
-import { Flex, Image, Stack, Avatar, chakra } from "@chakra-ui/react";
+import { Flex, Image } from "@chakra-ui/react";
 import { Streamer } from "../../../../../libs/models/streamer.model";
 import RightPanel from "./RightPanel";
 const CarouselItem = ({

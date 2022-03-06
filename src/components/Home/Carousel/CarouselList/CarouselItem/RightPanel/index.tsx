@@ -1,5 +1,4 @@
 import { Avatar, Flex, Stack, chakra } from "@chakra-ui/react";
-import React from "react";
 import { Streamer } from "../../../../../../libs/models/streamer.model";
 
 const RightPanel = ({
