@@ -1,26 +1,37 @@
 [
   {
-    "name": "Luquita",
+    "name": "BillGates",
     "viewers": "388",
-    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/8ec9e0c4-53b5-46e8-9139-48246fc605e7-profile_image-70x70.png",
-    "game": "Terraria"
+    "avatar": "https://laverdadnoticias.com/export/sites/laverdad/img/2021/04/21/bill_gates.jpg_2064564707.jpg",
+    "game": "Terraria",
+    "tags": ["Español", "Chino"]
+  },
+  {
+    "name": "SteveJobs",
+    "viewers": "240",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijkzWWcAPqtTMIdFL3GhkVAXKSsBSQeeXng&usqp=CAU",
+    "game": "Just Chatting",
+    "tags": ["Inglés", "Portugués"]
   },
   {
     "name": "JeffBezos",
     "viewers": "4.2k",
     "avatar": "http://cdn2.dineroenimagen.com/media/dinero/jeff-bezos.jpeg",
-    "game": "Roblox"
+    "game": "Roblox",
+    "tags": ["Inglés", "Español"]
   },
   {
     "name": "ElonMusk",
     "viewers": "10",
     "avatar": "https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2RmODZjM2RjZTg5ZDI2ZGQzZWI5NWU4YzI1MDBhMTIyLmpwZWc%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D",
-    "game": "Minecraft"
+    "game": "Minecraft",
+    "tags": ["Italiano"]
   },
   {
     "name": "MarkZuckerberg",
     "viewers": "38",
     "avatar": "https://pbs.twimg.com/profile_images/730271326150103042/gR9RVbmC_400x400.jpg",
-    "game": "Fortnite"
+    "game": "Fortnite",
+    "tags": ["Inglés"]
   }
 ]

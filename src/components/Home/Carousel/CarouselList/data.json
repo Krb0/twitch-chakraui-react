@@ -1,0 +1,67 @@
+[
+  {
+    "secondary": true,
+    "zIndex": "2",
+    "src": "https://webapp.gameloop.com/gameassistant/web/4d30b166acbed4d3a6be8d4df7d9792c.png.big.webp",
+    "left": "-215px",
+    "streamer": {
+      "name": "BillGates",
+      "viewers": "388",
+      "avatar": "https://laverdadnoticias.com/export/sites/laverdad/img/2021/04/21/bill_gates.jpg_2064564707.jpg",
+      "game": "Terraria",
+      "tags": ["Español", "Chino"]
+    }
+  },
+  {
+    "secondary": true,
+    "zIndex": "3",
+    "src": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2016/12/16/1331835109442_2/t%C3%BA-imaginaci%C3%B3n-es-el-%C3%BAnico-l%C3%ADmite.png",
+    "left": "-120px",
+    "streamer": {
+      "name": "SteveJobs",
+      "viewers": "240",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijkzWWcAPqtTMIdFL3GhkVAXKSsBSQeeXng&usqp=CAU",
+      "game": "Just Chatting",
+      "tags": ["Inglés", "Portugués"]
+    }
+  },
+  {
+    "secondary": false,
+    "zIndex": "4",
+    "src": "https://www.hd-tecnologia.com/imagenes/articulos/2019/10/CSGO-alcanz%C3%B3-un-r%C3%A9cord-en-su-n%C3%BAmero-de-jugadores-promedio-800x450.jpg",
+    "left": "0px",
+    "streamer": {
+      "name": "JeffBezos",
+      "viewers": "4.2k",
+      "avatar": "http://cdn2.dineroenimagen.com/media/dinero/jeff-bezos.jpeg",
+      "game": "Roblox",
+      "tags": ["Español", "Inglés"]
+    }
+  },
+  {
+    "secondary": true,
+    "zIndex": "3",
+    "src": "https://www.mybasis.com/wp-content/uploads/2020/02/roblox-1-1.jpg",
+    "left": "120px",
+    "streamer": {
+      "name": "ElonMusk",
+      "viewers": "10",
+      "avatar": "https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2RmODZjM2RjZTg5ZDI2ZGQzZWI5NWU4YzI1MDBhMTIyLmpwZWc%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D",
+      "game": "Minecraft",
+      "tags": ["Italiano"]
+    }
+  },
+  {
+    "secondary": true,
+    "zIndex": "2",
+    "src": "https://i.pinimg.com/originals/3f/a9/fe/3fa9fe249f516ff87909b587f7fefc8e.jpg",
+    "left": "215px",
+    "streamer": {
+      "name": "MarkZuckerberg",
+      "viewers": "38",
+      "avatar": "https://pbs.twimg.com/profile_images/730271326150103042/gR9RVbmC_400x400.jpg",
+      "game": "Fortnite",
+      "tags": ["Inglés"]
+    }
+  }
+]

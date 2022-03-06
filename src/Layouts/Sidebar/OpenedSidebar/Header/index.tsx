@@ -1,6 +1,6 @@
 import { Box, chakra, Flex } from "@chakra-ui/react";
 import Icon from "../../../../components/Icon";
-import closeSidebarIcon from "../../../../assets/images/close-sidebar-icon.svg";
+import closeSidebarIcon from "../../../../assets/images/Sidebar/close-sidebar-icon.svg";
 
 interface IProps {
   setIsSidebar: React.Dispatch<React.SetStateAction<boolean>>;

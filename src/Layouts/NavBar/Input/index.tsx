@@ -1,6 +1,6 @@
 import { Box, Flex, Input, Image } from "@chakra-ui/react";
 import { useState } from "react";
-import searchIcon from "../../../assets/images/search-icon.svg";
+import searchIcon from "../../../assets/images/Header/search-icon.svg";
 const NavbarInput = () => {
   const [inputText, setInputText] = useState("");
   return (

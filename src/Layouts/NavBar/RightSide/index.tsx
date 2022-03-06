@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
-import loginIcon from "../../../assets/images/login-icon.svg";
-import crownIcon from "../../../assets/images/crown-icon.svg";
+import loginIcon from "../../../assets/images/Header/login-icon.svg";
+import crownIcon from "../../../assets/images/Header/crown-icon.svg";
 import Button from "./Button";
 import Icon from "../../../components/Icon";
 

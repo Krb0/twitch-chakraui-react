@@ -3,4 +3,5 @@ export interface Streamer {
   viewers: string;
   avatar: string;
   game: string;
+  tags: string[];
 }

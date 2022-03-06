@@ -1,7 +1,7 @@
 import { Box, Stack } from "@chakra-ui/react";
-import closeSidebarIcon from "../../../assets/images/close-sidebar-icon.svg";
+import closeSidebarIcon from "../../../assets/images/Sidebar/close-sidebar-icon.svg";
 import Icon from "../../../components/Icon";
-import CameraIcon from "../../../assets/images/camera-icon.svg";
+import CameraIcon from "../../../assets/images/Sidebar/camera-icon.svg";
 import { Streamer } from "../../../libs/models/streamer.model";
 import StreamersList from "./StreamersList";
 
