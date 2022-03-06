@@ -1,7 +1,5 @@
 import { Avatar, Stack, chakra, Flex, Image } from "@chakra-ui/react";
-import { useState } from "react";
 import CarouselList from "./CarouselList";
-import CarouselItem from "./CarouselList/CarouselItem";
 
 const Carousel = () => {
   return (

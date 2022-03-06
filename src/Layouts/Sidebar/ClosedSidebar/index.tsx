@@ -4,6 +4,7 @@ import Icon from "../../../components/Icon";
 import CameraIcon from "../../../assets/images/Sidebar/camera-icon.svg";
 import { Streamer } from "../../../libs/models/streamer.model";
 import StreamersList from "./StreamersList";
+import useBreakpoint from "../../../hooks/useBreakpoint";
 
 interface Props {
   setIsSidebar: React.Dispatch<React.SetStateAction<boolean>>;
@@ -11,18 +12,24 @@ interface Props {
 }
 
 const ClosedSidebar = ({ setIsSidebar, streamers }: Props) => {
+  const [isMobile] = useBreakpoint();
   return (
     <SidebarContainer>
       <>
-        <Box
-          onClick={() => setIsSidebar(true)}
-          marginX="auto"
-          css={{
-            transform: "scaleX(-1)",
-          }}
-        >
-          <Icon icon={closeSidebarIcon} label="Expandir" placement="right" />
-        </Box>
+        {!isMobile ? (
+          <Box
+            onClick={() => setIsSidebar(true)}
+            marginX="auto"
+            css={{
+              transform: "scaleX(-1)",
+            }}
+          >
+            <Icon icon={closeSidebarIcon} label="Expandir" placement="right" />
+          </Box>
+        ) : (
+          ""
+        )}
+
         <Stack alignItems="center">
           <Icon
             icon={CameraIcon}
