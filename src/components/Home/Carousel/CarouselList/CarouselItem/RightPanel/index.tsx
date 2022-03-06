@@ -1,4 +1,5 @@
 import { Avatar, Flex, Stack, chakra } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { Stream } from "../../../../../../libs/models/stream.model";
 
 const RightPanel = ({
@@ -25,7 +26,9 @@ const RightPanel = ({
       }
     >
       <Flex gap="0.5rem">
-        <Avatar src={stream.streamer.avatar} height="50px" width="50px" />
+        <Link to={"streamer/" + stream.streamer.id}>
+          <Avatar src={stream.streamer.avatar} height="50px" width="50px" />
+        </Link>
         <Stack
           width="150px"
           height="full"
@@ -33,9 +36,11 @@ const RightPanel = ({
           gap="0"
           spacing="0"
         >
-          <chakra.span fontSize="14px" fontWeight="600" color="primary.100">
-            {stream.streamer.name}
-          </chakra.span>
+          <Link to={"streamer/" + stream.streamer.id}>
+            <chakra.span fontSize="14px" fontWeight="600" color="primary.100">
+              {stream.streamer.name}
+            </chakra.span>
+          </Link>
           <chakra.span fontSize="13px" color="primary.300" fontWeight="400">
             {stream.game.name}
           </chakra.span>

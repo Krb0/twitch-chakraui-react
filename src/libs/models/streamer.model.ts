@@ -4,4 +4,5 @@ export interface Streamer {
   description: string;
   followers: number;
   partner: boolean;
+  id: string;
 }

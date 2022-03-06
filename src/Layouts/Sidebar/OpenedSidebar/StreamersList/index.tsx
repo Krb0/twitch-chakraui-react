@@ -1,8 +1,10 @@
-import { Stack } from "@chakra-ui/react";
+import { Stack, chakra } from "@chakra-ui/react";
+import { useState } from "react";
 import { Stream } from "../../../../libs/models/stream.model";
 import StreamerCard from "./StreamerCard";
 
 const StreamersList = ({ streams }: { streams: Stream[] }) => {
+  const [isShowMore, setIsShowMore] = useState<boolean>(false);
   return (
     <Stack
       gap="0rem"
@@ -14,9 +16,26 @@ const StreamersList = ({ streams }: { streams: Stream[] }) => {
         },
       }}
     >
-      {streams.slice(0, 9).map((stream) => (
+      {streams.slice(0, parseInt(`${isShowMore ? 14 : 6}`)).map((stream) => (
         <StreamerCard {...stream} />
       ))}
+      {!isShowMore ? (
+        <chakra.button
+          onClick={() => setIsShowMore(true)}
+          color="rgba(255,255,255,0.75)"
+          fontSize="0.9rem"
+        >
+          Mostrar más
+        </chakra.button>
+      ) : (
+        <chakra.button
+          onClick={() => setIsShowMore(false)}
+          color="rgba(255,255,255,0.75)"
+          fontSize="0.9rem"
+        >
+          Mostrar menos
+        </chakra.button>
+      )}
     </Stack>
   );
 };
