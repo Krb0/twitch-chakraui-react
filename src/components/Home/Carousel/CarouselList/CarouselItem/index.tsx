@@ -1,18 +1,18 @@
 import { Flex, Image } from "@chakra-ui/react";
-import { Streamer } from "../../../../../libs/models/streamer.model";
+import { Stream } from "../../../../../libs/models/stream.model";
 import RightPanel from "./RightPanel";
 const CarouselItem = ({
   zIndex,
   src,
   left,
   secondary,
-  streamer,
+  stream,
 }: {
   zIndex: string;
   src: string;
   left: string;
   secondary: boolean;
-  streamer: Streamer;
+  stream: Stream;
 }): JSX.Element => {
   return (
     <Flex
@@ -52,7 +52,7 @@ const CarouselItem = ({
         objectFit="cover"
         borderLeftRadius="3px"
       />
-      <RightPanel streamer={streamer} secondary={secondary} />
+      <RightPanel stream={stream} secondary={secondary} />
     </Flex>
   );
 };

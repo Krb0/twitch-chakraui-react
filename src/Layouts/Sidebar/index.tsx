@@ -1,22 +1,22 @@
 import OpenedSidebar from "./OpenedSidebar";
 import ClosedSidebar from "./ClosedSidebar";
 import { useState } from "react";
-import { Streamer } from "../../libs/models/streamer.model";
-import data from "./data.json";
+import data from "../../libs/data.json";
 import useBreakpoint from "../../hooks/useBreakpoint";
+import { Stream } from "../../libs/models/stream.model";
 interface Props {
   isSidebar: boolean;
   setIsSidebar: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const Sidebar = ({ setIsSidebar, isSidebar }: Props) => {
-  const [streamers] = useState<Streamer[]>([...data]);
+  const [streams] = useState<Stream[]>([...data]);
   const [isMobile] = useBreakpoint();
   return (
     <>
       {isSidebar && !isMobile ? (
-        <OpenedSidebar setIsSidebar={setIsSidebar} streamers={streamers} />
+        <OpenedSidebar setIsSidebar={setIsSidebar} streams={streams} />
       ) : (
-        <ClosedSidebar setIsSidebar={setIsSidebar} streamers={streamers} />
+        <ClosedSidebar setIsSidebar={setIsSidebar} streams={streams} />
       )}
     </>
   );

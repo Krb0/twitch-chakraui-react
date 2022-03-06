@@ -1,7 +1,7 @@
 export interface Streamer {
   name: string;
-  viewers: string;
   avatar: string;
-  game: string;
-  tags: string[];
+  description: string;
+  followers: number;
+  partner: boolean;
 }

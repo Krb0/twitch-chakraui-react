@@ -2,16 +2,16 @@ import { Box, Stack } from "@chakra-ui/react";
 import closeSidebarIcon from "../../../assets/images/Sidebar/close-sidebar-icon.svg";
 import Icon from "../../../components/Icon";
 import CameraIcon from "../../../assets/images/Sidebar/camera-icon.svg";
-import { Streamer } from "../../../libs/models/streamer.model";
 import StreamersList from "./StreamersList";
 import useBreakpoint from "../../../hooks/useBreakpoint";
+import { Stream } from "../../../libs/models/stream.model";
 
 interface Props {
   setIsSidebar: React.Dispatch<React.SetStateAction<boolean>>;
-  streamers: Streamer[];
+  streams: Stream[];
 }
 
-const ClosedSidebar = ({ setIsSidebar, streamers }: Props) => {
+const ClosedSidebar = ({ setIsSidebar, streams }: Props) => {
   const [isMobile] = useBreakpoint();
   return (
     <SidebarContainer>
@@ -36,7 +36,7 @@ const ClosedSidebar = ({ setIsSidebar, streamers }: Props) => {
             label="Streamers Recomendados"
             placement="right"
           />
-          <StreamersList streamers={streamers} />
+          <StreamersList streams={streams} />
         </Stack>
       </>
     </SidebarContainer>

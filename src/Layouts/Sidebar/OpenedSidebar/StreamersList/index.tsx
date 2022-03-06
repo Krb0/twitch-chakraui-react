@@ -1,8 +1,8 @@
 import { Stack } from "@chakra-ui/react";
-import { Streamer } from "../../../../libs/models/streamer.model";
+import { Stream } from "../../../../libs/models/stream.model";
 import StreamerCard from "./StreamerCard";
 
-const StreamersList = ({ streamers }: { streamers: Streamer[] }) => {
+const StreamersList = ({ streams }: { streams: Stream[] }) => {
   return (
     <Stack
       gap="0rem"
@@ -14,8 +14,8 @@ const StreamersList = ({ streamers }: { streamers: Streamer[] }) => {
         },
       }}
     >
-      {streamers.map((streamer) => (
-        <StreamerCard {...streamer} />
+      {streams.slice(0, 9).map((stream) => (
+        <StreamerCard {...stream} />
       ))}
     </Stack>
   );

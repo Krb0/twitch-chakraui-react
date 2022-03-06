@@ -1,19 +1,19 @@
 import { Stack } from "@chakra-ui/react";
-import { Streamer } from "../../../libs/models/streamer.model";
+import { Stream } from "../../../libs/models/stream.model";
 import Header from "./Header";
 import StreamersList from "./StreamersList";
 
 interface Props {
   setIsSidebar: React.Dispatch<React.SetStateAction<boolean>>;
-  streamers: Streamer[];
+  streams: Stream[];
 }
 
-const Sidebar = ({ setIsSidebar, streamers }: Props) => {
+const Sidebar = ({ setIsSidebar, streams }: Props) => {
   return (
     <SidebarContainer>
       <>
         <Header setIsSidebar={setIsSidebar} />
-        <StreamersList streamers={streamers} />
+        <StreamersList streams={streams} />
       </>
     </SidebarContainer>
   );

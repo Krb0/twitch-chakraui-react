@@ -1,19 +1,22 @@
 import { Avatar, Flex, chakra, Box, Tooltip } from "@chakra-ui/react";
+import { Streamer } from "../../../../../libs/models/streamer.model";
 
 const StreamerCard = ({
-  name,
-  avatar,
+  streamer,
   viewers,
   game,
 }: {
-  name: string;
-  avatar: string;
-  viewers: string;
-  game: string;
+  streamer: Streamer;
+  viewers: number;
+  game: {
+    name: string;
+    cover: string;
+    video: string;
+  };
 }) => {
   return (
     <Tooltip
-      label={`${name} | ${viewers} espectadores | Transmitiendo ${game} `}
+      label={`${streamer.name} | ${viewers} espectadores | Transmitiendo ${game.name} `}
       bgColor="dark.300"
       color="white"
       placement="right"
@@ -30,13 +33,13 @@ const StreamerCard = ({
         cursor="pointer"
       >
         <Flex gap="0.5rem" width="80%" alignItems="center">
-          <Avatar width="30px" height="30px" src={avatar} />
+          <Avatar width="30px" height="30px" src={streamer.avatar} />
           <Flex justifyContent="center" flexDirection="column" gap="0">
             <chakra.span fontSize="15px" fontWeight="500">
-              {name}
+              {streamer.name}
             </chakra.span>
             <chakra.span fontSize="14px" fontWeight="300" color="#adadb8">
-              {game}
+              {game.name}
             </chakra.span>
           </Flex>
         </Flex>
@@ -44,7 +47,7 @@ const StreamerCard = ({
         <Flex alignItems="center" alignSelf="flex-start" gap="0.5rem">
           <Box borderRadius="50%" bgColor="red" width="8px" height="8px" />
           <chakra.span fontSize="14px" fontWeight="300" color="#d8d8d8">
-            {viewers}{" "}
+            {viewers}
           </chakra.span>
         </Flex>
       </Flex>
