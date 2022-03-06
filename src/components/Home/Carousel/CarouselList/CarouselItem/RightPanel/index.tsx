@@ -37,10 +37,10 @@ const RightPanel = ({
           <chakra.span fontSize="14px" fontWeight="600" color="primary.100">
             {streamer.name}
           </chakra.span>
-          <chakra.span fontSize="13px" fontWeight="400">
+          <chakra.span fontSize="13px" color="primary.300" fontWeight="400">
             {streamer.game}
           </chakra.span>
-          <chakra.span fontSize="12px" fontWeight="300">
+          <chakra.span fontSize="13.5px" fontWeight="300">
             {streamer.viewers} espectadores
           </chakra.span>
         </Stack>
