@@ -1,6 +1,7 @@
-import { Avatar, Flex, Image, Stack, chakra } from "@chakra-ui/react";
+import { Avatar, Flex, Image, Stack, chakra, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { Stream } from "../../../libs/models/stream.model";
+import { Tags } from "../Carousel/CarouselList/CarouselItem/RightPanel";
 
 const ChannelCard = ({ stream }: { stream: Stream }) => {
   return (
@@ -12,7 +13,12 @@ const ChannelCard = ({ stream }: { stream: Stream }) => {
         src={stream.game.image}
       />
       <Flex gap="0.5rem" alignItems="center">
-        <Link to={`streamer/${stream.streamer.id}`}>
+        <Link
+          to={`streamer/${stream.streamer.id}`}
+          style={{
+            alignSelf: "flex-start",
+          }}
+        >
           <Avatar
             src={stream.streamer.avatar}
             height="40px"
@@ -49,6 +55,9 @@ const ChannelCard = ({ stream }: { stream: Stream }) => {
           <chakra.span fontSize="0.8rem" fontWeight="400" color="#ADADB8">
             {stream.game.name}{" "}
           </chakra.span>
+          <Flex paddingTop="0.2rem">
+            <Tags stream={stream} />
+          </Flex>
         </Stack>
       </Flex>
     </Stack>

@@ -49,23 +49,7 @@ const RightPanel = ({
           </chakra.span>
         </Stack>
       </Flex>
-      <Flex gap="0.5rem">
-        {stream.tags.map((tag) => (
-          <chakra.span
-            borderRadius="20px"
-            bgColor="#3A3A3D"
-            color="rgba(255, 255, 255, 0.8)"
-            fontWeight="500"
-            textAlign="center"
-            width="fit-content"
-            paddingX="0.6rem"
-            paddingY="0.05rem"
-            fontSize="13px"
-          >
-            {tag}
-          </chakra.span>
-        ))}
-      </Flex>
+      <Tags stream={stream} />
       <chakra.span
         width="12rem"
         fontSize="0.85rem"
@@ -78,3 +62,25 @@ const RightPanel = ({
 };
 
 export default RightPanel;
+
+export const Tags = ({ stream }: { stream: Stream }) => {
+  return (
+    <Flex gap="0.5rem">
+      {stream.tags.map((tag) => (
+        <chakra.span
+          borderRadius="20px"
+          bgColor="#3A3A3D"
+          color="rgba(255, 255, 255, 0.8)"
+          fontWeight="500"
+          textAlign="center"
+          width="fit-content"
+          paddingX="0.6rem"
+          paddingY="0.05rem"
+          fontSize="13px"
+        >
+          {tag}
+        </chakra.span>
+      ))}
+    </Flex>
+  );
+};
