@@ -1,9 +1,19 @@
-import { Box, Flex, Grid, GridItem, Image } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Image, Stack } from "@chakra-ui/react";
 import Carousel from "../components/Home/Carousel";
+import Channels from "../components/Home/Channels";
 
 const HomePage = () => {
   return (
-    <Flex width="full" height="full">
+    <Stack
+      width="full"
+      height="full"
+      overflowY="scroll"
+      css={{
+        "&::-webkit-scrollbar": {
+          width: "0px",
+        },
+      }}
+    >
       <Box position="relative" width="full">
         <Grid height="350px" templateColumns="repeat(48, 1fr)">
           <GridItem colSpan={13} display={{ base: "none", lg: "inline-block" }}>
@@ -27,7 +37,8 @@ const HomePage = () => {
 
         <Carousel />
       </Box>
-    </Flex>
+      <Channels />
+    </Stack>
   );
 };
 

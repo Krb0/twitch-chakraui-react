@@ -12,6 +12,7 @@ const NavBar = () => {
       padding="0.15rem 0.85rem 0.5rem 0.25rem"
       boxShadow="md"
       zIndex="2"
+      position="sticky"
     >
       <LeftSide />
       <Input />

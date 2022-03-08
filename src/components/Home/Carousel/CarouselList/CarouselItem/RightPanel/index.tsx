@@ -66,6 +66,13 @@ const RightPanel = ({
           </chakra.span>
         ))}
       </Flex>
+      <chakra.span
+        width="12rem"
+        fontSize="0.85rem"
+        color="rgba(255,255,255,0.85)"
+      >
+        {stream.streamer.description}
+      </chakra.span>
     </Stack>
   );
 };

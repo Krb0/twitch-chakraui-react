@@ -11,6 +11,8 @@ const Layouts = ({ children }: { children: React.ReactChild }) => {
       height="100vh"
       display="flex"
       flexDirection="column"
+      position="sticky"
+      overflowY="hidden"
     >
       <NavBar />
       <Flex height="full" width="full">
