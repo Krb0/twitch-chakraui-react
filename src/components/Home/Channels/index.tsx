@@ -3,11 +3,13 @@ import ChannelCard from "./ChannelCard";
 import { useState } from "react";
 import data from "../../../libs/data.json";
 import { Stream } from "../../../libs/models/stream.model";
+import ExploreCategories from "../../Browse/ExploreCategories";
 const Channels = () => {
   const [streams] = useState<Stream[]>(data);
   return (
     <Stack
       paddingX="1.75rem"
+      paddingBottom="5rem"
       divider={
         <chakra.div
           height="0.009rem"
@@ -30,6 +32,7 @@ const Channels = () => {
           ))}
         </Flex>
       </Stack>
+      <ExploreCategories />
     </Stack>
   );
 };
