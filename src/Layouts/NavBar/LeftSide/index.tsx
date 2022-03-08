@@ -7,7 +7,11 @@ import { Link } from "react-router-dom";
 
 const LeftSide = () => {
   return (
-    <HStack alignItems="center" spacing="6" flexBasis="100%">
+    <HStack
+      alignItems="center"
+      spacing={{ base: "2", md: "4" }}
+      flexBasis="100%"
+    >
       <Link to="/">
         <Box
           position="relative"
@@ -35,8 +39,10 @@ const LeftSide = () => {
           Explorar
         </chakra.span>
       </Link>
-      <Box display={{ base: "inline", md: "none" }}>
-        <Icon icon={browseIcon} label="Más" />
+      <Box display={{ base: "flex", md: "none" }}>
+        <Link to="/browse">
+          <Icon icon={browseIcon} label="Explorar" />
+        </Link>
       </Box>
       <Icon icon={moreInfoVertIcon} label="Más" />
     </HStack>

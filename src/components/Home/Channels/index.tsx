@@ -23,7 +23,7 @@ const Channels = () => {
         <Flex
           gap="0.7rem"
           flexWrap="wrap"
-          justifyContent={{ lg: "space-around", base: "center" }}
+          justifyContent={{ sm: "space-around", base: "center" }}
         >
           {streams.slice(0, 10).map((stream) => (
             <ChannelCard stream={stream} />

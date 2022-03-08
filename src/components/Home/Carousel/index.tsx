@@ -11,7 +11,6 @@ const Carousel = () => {
       alignItems="center"
       justifyContent="center"
       color="white"
-      border="2px solid red"
     >
       <CarouselList />
     </Flex>
