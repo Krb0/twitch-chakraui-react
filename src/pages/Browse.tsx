@@ -1,4 +1,4 @@
-import { Box, chakra, Flex, Image, Stack } from "@chakra-ui/react";
+import { chakra, Stack } from "@chakra-ui/react";
 import ExploreCategories from "../components/Browse/ExploreCategories";
 const Browse = () => {
   return (
