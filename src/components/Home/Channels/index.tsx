@@ -1,4 +1,4 @@
-import { Flex, Stack, chakra, Image } from "@chakra-ui/react";
+import { Flex, Stack, chakra } from "@chakra-ui/react";
 import ChannelCard from "./ChannelCard";
 import { useState } from "react";
 import data from "../../../libs/data.json";

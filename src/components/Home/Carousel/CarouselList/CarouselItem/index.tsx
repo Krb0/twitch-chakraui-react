@@ -47,8 +47,16 @@ const CarouselItem = ({
     >
       <Image
         src={src}
-        width="530px"
-        height="300px"
+        width={{
+          base: "195px",
+          xs: "350px",
+          sm: "530px",
+        }}
+        height={{
+          base: "150px",
+          xs: "250px",
+          sm: "300px",
+        }}
         objectFit="cover"
         borderLeftRadius="3px"
       />
