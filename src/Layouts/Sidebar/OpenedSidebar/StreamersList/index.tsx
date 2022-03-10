@@ -17,7 +17,7 @@ const StreamersList = ({ streams }: { streams: Stream[] }) => {
       }}
     >
       {streams.slice(0, parseInt(`${isShowMore ? 14 : 6}`)).map((stream) => (
-        <StreamerCard {...stream} />
+        <StreamerCard key={stream.streamer.avatar} {...stream} />
       ))}
       {!isShowMore ? (
         <chakra.button

@@ -3,9 +3,11 @@ import moreInfoVertIcon from "../../../assets/images/Header/more-info-vert.svg";
 import browseIcon from "../../../assets/images/Header/browse-icon.svg";
 import { Box, HStack, chakra, Image } from "@chakra-ui/react";
 import Icon from "../../../components/Icon";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const LeftSide = () => {
+  const { pathname } = useLocation();
+
   return (
     <HStack
       alignItems="center"
@@ -30,7 +32,10 @@ const LeftSide = () => {
           }}
           fontWeight="500"
           fontSize="19px"
-          color="white"
+          color={pathname === "/browse" ? "primary.100" : "white"}
+          height="200px"
+          borderBottom={pathname === "/browse" ? "2px solid #bf94ff" : "none"}
+          paddingBottom="0.95rem"
           cursor="pointer"
           _hover={{
             color: "primary.100",

@@ -15,6 +15,7 @@ const CarouselList = () => {
     >
       {carouselItems.slice(0, 5).map((item, index) => (
         <CarouselItem
+          key={item.streamer.name}
           stream={item}
           src={index === 2 ? item.game.video : item.game.image}
           left={

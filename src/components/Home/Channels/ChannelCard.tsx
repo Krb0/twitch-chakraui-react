@@ -1,11 +1,14 @@
-import { Avatar, Flex, Image, Stack, chakra, Box } from "@chakra-ui/react";
+import { Avatar, Flex, Image, Stack, chakra } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { Stream } from "../../../libs/models/stream.model";
 import { Tags } from "../Carousel/CarouselList/CarouselItem/RightPanel";
 
 const ChannelCard = ({ stream }: { stream: Stream }) => {
   return (
-    <Stack width={{ base: "full", sm: "220px", lg: "280px" }}>
+    <Stack
+      width={{ base: "full", sm: "220px", lg: "280px" }}
+      marginBottom="1rem"
+    >
       <Image
         width="full"
         height="190px"

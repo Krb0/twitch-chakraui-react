@@ -27,7 +27,7 @@ const ExploreCategories = () => {
   return (
     <Flex gap="0.5rem" flexWrap="wrap" justifyContent="center">
       {icons.map((item) => (
-        <ExploreCategory item={item} />
+        <ExploreCategory key={item.name} item={item} />
       ))}
     </Flex>
   );
@@ -53,7 +53,7 @@ const ExploreCategory = ({
       padding="1rem"
       flexGrow="1"
       minWidth="200px"
-      maxWidth="300px"
+      maxWidth="400px"
       cursor="pointer"
       _hover={{
         bgColor: "primary.500",

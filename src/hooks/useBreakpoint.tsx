@@ -12,6 +12,9 @@ const useBreakpoint = () => {
     } else {
       setIsMobile(true);
     }
+    return () => {
+      setIsMobile(true);
+    };
   }, [windowWidth]);
 
   return [isMobile];

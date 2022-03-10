@@ -77,6 +77,7 @@ export const Tags = ({ stream }: { stream: Stream }) => {
           paddingX="0.6rem"
           paddingY="0.05rem"
           fontSize="13px"
+          key={tag}
         >
           {tag}
         </chakra.span>

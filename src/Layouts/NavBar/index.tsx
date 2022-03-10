@@ -9,7 +9,7 @@ const NavBar = () => {
       display="flex"
       alignItems="center"
       bgColor="dark.500"
-      padding="0.15rem 0.85rem 0.5rem 0.25rem"
+      padding="0.25rem 0.85rem 0.5rem 0.25rem"
       boxShadow="md"
       zIndex="2"
       position="sticky"

@@ -8,15 +8,16 @@ const StreamersList = ({ streams }: { streams: Stream[] }) => {
       gap="0rem"
       overflowY="scroll"
       alignItems="center"
-      height="100%"
+      height="100vh"
+      paddingBottom="8rem"
       css={{
         "&::-webkit-scrollbar": {
           width: "0px",
         },
       }}
     >
-      {streams.slice(0, 9).map(({ streamer }) => (
-        <StreamerCard streamer={streamer} />
+      {streams.map(({ streamer }) => (
+        <StreamerCard key={streamer.avatar} streamer={streamer} />
       ))}
     </Stack>
   );

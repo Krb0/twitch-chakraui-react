@@ -28,7 +28,7 @@ const Channels = () => {
           justifyContent={{ sm: "space-around", base: "center" }}
         >
           {streams.slice(0, 10).map((stream) => (
-            <ChannelCard stream={stream} />
+            <ChannelCard key={stream.streamer.id} stream={stream} />
           ))}
         </Flex>
       </Stack>

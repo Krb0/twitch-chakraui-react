@@ -7,6 +7,7 @@ export interface Stream {
     cover: string;
     image: string;
     video: string;
+    viewers: number;
   };
   tags: string[];
   length: number;
