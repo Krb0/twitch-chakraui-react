@@ -14,13 +14,15 @@ const Stream = ({ stream }: { stream: StreamInterface }) => {
       }}
       bgColor="dark.700"
       overflowY="scroll"
+      paddingBottom="5rem"
     >
       <Image
         src={stream.game.video}
-        minHeight="82%"
+        minHeight="85%"
         objectFit="cover"
         borderBottom="1px solid rgba(255,255,255, 0.15)"
       />
+
       <StreamerInfo stream={stream} />
     </Stack>
   );
