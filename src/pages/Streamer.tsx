@@ -20,7 +20,7 @@ const Streamer = () => {
   return (
     <Flex height="100vh">
       <Stream stream={stream} />
-      {!isChat && (
+      {!isChat && !isMobile && (
         <Image
           position="absolute"
           top="14"

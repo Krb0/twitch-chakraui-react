@@ -1,5 +1,4 @@
 import { Flex, chakra, Image } from "@chakra-ui/react";
-import React from "react";
 
 const ExploreCategories = () => {
   const icons = [
