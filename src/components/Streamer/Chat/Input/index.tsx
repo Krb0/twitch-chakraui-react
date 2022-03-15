@@ -1,20 +1,37 @@
-import { Stack, Input, Button } from "@chakra-ui/react";
-
+import {
+  Stack,
+  Input,
+  Button,
+  InputGroup,
+  InputRightElement,
+} from "@chakra-ui/react";
+import IconContainer from "../../../Icon";
+import chatEmote from "../../../../assets/images/Chat/chat-emote.svg";
 const ChatInput = () => {
   return (
     <Stack minHeight="100px" padding="9px">
-      <Input
-        placeholder="Enviar un mensaje"
-        width="full"
-        height="45px"
-        fontSize="0.85rem"
-        _placeholder={{
-          color: "rgba(255,255,255,0.7)",
-        }}
-        bgColor="dark.100"
-        borderRadius="3px"
-        border="none"
-      />
+      <InputGroup size="md">
+        <Input
+          placeholder="Enviar un mensaje"
+          width="full"
+          height="45px"
+          fontSize="0.85rem"
+          _placeholder={{
+            color: "rgba(255,255,255,0.7)",
+          }}
+          bgColor="dark.100"
+          borderRadius="3px"
+          border="none"
+        />
+        <InputRightElement height="full">
+          <IconContainer
+            icon={chatEmote}
+            label="hey"
+            onHover={{ bgColor: "rgba(255,255,255,0.2)" }}
+          />
+        </InputRightElement>
+      </InputGroup>
+
       <Button
         alignSelf="flex-end"
         bgColor="primary.500"

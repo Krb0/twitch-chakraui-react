@@ -20,7 +20,12 @@ const Messages = () => {
           message: "I think you should try Minecraft",
         },
       ].map(({ name, message }) => (
-        <chakra.span fontWeight="500" fontSize="14px" color="#dedee3">
+        <chakra.span
+          fontWeight="500"
+          fontSize="14px"
+          color="#dedee3"
+          key={name}
+        >
           <chakra.span color="primary.300" fontWeight="600">
             {name}
           </chakra.span>
