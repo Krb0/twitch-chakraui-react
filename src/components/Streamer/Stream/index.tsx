@@ -18,7 +18,7 @@ const Stream = ({ stream }: { stream: StreamInterface }) => {
     >
       <Image
         src={stream.game.video}
-        minHeight="85%"
+        minHeight={{ base: "200px", sm: "85%" }}
         objectPosition="right"
         objectFit="cover"
         borderBottom="1px solid rgba(255,255,255, 0.15)"

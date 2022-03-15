@@ -53,7 +53,7 @@ const StreamerInfo = ({ stream }: { stream: Stream }) => {
         width="95%"
         alignSelf="center"
         bgColor="dark.500"
-        height="250px"
+        minHeight="250px"
         color="white"
         paddingTop="2.5rem"
         paddingLeft="3rem"

@@ -1,6 +1,8 @@
-import { Box, Flex, Image, Stack, chakra } from "@chakra-ui/react";
-import closeSidebarIcon from "../../../assets/images/Sidebar/close-sidebar-icon.svg";
-import chatParticipantsIcon from "../../../assets/images/Chat/chat-participants.svg";
+import { Box, Stack, chakra } from "@chakra-ui/react";
+
+import Messages from "./Messages";
+import Input from "./Input";
+import Header from "./Header";
 
 const Chat = ({
   isChat,
@@ -29,45 +31,9 @@ const Chat = ({
             />
           }
         >
-          <Flex
-            alignItems="center"
-            justifyContent="space-between"
-            padding="0.8rem"
-            paddingY="1rem"
-          >
-            <ChatIcon src={closeSidebarIcon} handler={() => setIsChat(false)} />
-            <chakra.span fontWeight="600" fontSize="16px" color="#dedee3">
-              CHAT DEL STREAM
-            </chakra.span>
-            <ChatIcon src={chatParticipantsIcon} handler={() => {}} />
-          </Flex>
-          <Stack
-            height="full"
-            overflowY="scroll"
-            css={{
-              "&::-webkit-scrollbar": {
-                width: "0px",
-              },
-            }}
-            paddingTop="0.5rem"
-            paddingX="1rem"
-          >
-            {[
-              { name: "George", message: "Nice Stream, keep it up" },
-              {
-                name: "Josh",
-                message: "I think you should try Minecraft",
-              },
-            ].map(({ name, message }) => (
-              <chakra.span fontWeight="500" fontSize="14px" color="#dedee3">
-                <chakra.span color="primary.300" fontWeight="600">
-                  {name}
-                </chakra.span>
-                : {message}
-              </chakra.span>
-            ))}
-          </Stack>
-          <Flex minHeight="90px"></Flex>
+          <Header setIsChat={setIsChat} />
+          <Messages />
+          <Input />
         </Stack>
       )}
     </Box>
@@ -75,24 +41,3 @@ const Chat = ({
 };
 
 export default Chat;
-
-const ChatIcon = ({ src, handler }: any) => {
-  return (
-    <Image
-      onClick={handler}
-      css={{
-        transform: "scaleX(-1)",
-      }}
-      _hover={{
-        bgColor: "#464649",
-      }}
-      borderRadius="4px"
-      cursor="pointer"
-      src={src}
-      objectFit="cover"
-      height="26px"
-      width="26px"
-      padding="0.1rem"
-    />
-  );
-};
